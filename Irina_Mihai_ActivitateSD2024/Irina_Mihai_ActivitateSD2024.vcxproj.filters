@@ -27,6 +27,9 @@
     <ClCompile Include="Seminar10.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Seminar11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Elevi.txt" />
