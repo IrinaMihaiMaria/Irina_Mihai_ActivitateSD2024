@@ -1,3 +1,4 @@
+/*
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <malloc.h>
@@ -15,11 +16,11 @@ struct Elev
 struct Nod
 {
 	Elev info;
-	Nod* st;//stanga
-	Nod* dr; //dreapta
+	Nod* st;
+	Nod* dr; 
 };
 
-//inseram in arbore
+
 void inserareArbore(Nod** radacina, Elev elev)
 {
 	if ((*radacina)!=NULL)
@@ -38,7 +39,7 @@ void inserareArbore(Nod** radacina, Elev elev)
 		Nod* nod = (Nod*)malloc(sizeof(Nod));
 
 		nod->info = elev;
-		nod->st = NULL; //daca si st si dr sunt NULL avemm nod FRUNZA
+		nod->st = NULL; 
 		nod->dr = NULL;
 
 		*radacina = nod;
@@ -55,7 +56,7 @@ Elev citireElev(FILE* fp)
 
 	for (int i = 0; i < elev.nrMedii; i++)
 	{
-		fscanf(fp, "%f", &(elev.medii[i]));//nu punem 5.2f ca nu merge(asta e doar pt afisare nu citire)
+		fscanf(fp, "%f", &(elev.medii[i]));
 	}
 	
 	return elev;
@@ -118,7 +119,7 @@ void afisareInOrder(Nod* arbore)
 }
 
 
-//functie care calculeaza mediea pt un elev
+
 float calculeazaMedieElev(Elev e)
 {
 	if (e.nrMedii != NULL)
@@ -138,26 +139,26 @@ float calculeazaMedieElev(Elev e)
 }
 
 
-//calculeaza media generala a tuturor elevilor 
-float calculeazaSumaNote(Nod* arbore, int* nrNote) //pinter la nrElevi ca il modificam de fiecare data 
+
+float calculeazaSumaNote(Nod* arbore, int* nrNote)
 {
 	if (arbore != NULL)
 	{
 		
 		float suma = 0;
-		//R -- root
+		
 		for (int i = 0; i < arbore->info.nrMedii; i++)
 		{
 			suma += arbore->info.medii[i];
 		}
 
 		(*nrNote) += arbore->info.nrMedii;
-		//S-- stanga
-		float sumaS = calculeazaSumaNote(arbore->st, nrNote );//suma stanga
+		
+		float sumaS = calculeazaSumaNote(arbore->st, nrNote );
 
 
-		//D--dreapta
-		float sumaD = calculeazaSumaNote(arbore->dr, nrNote);//suma dreapta
+		
+		float sumaD = calculeazaSumaNote(arbore->dr, nrNote);
 		
 		return suma + sumaS + sumaD;
 	}
@@ -190,7 +191,10 @@ float calculeazaMedieGenerala(Nod* arbore)
 void main()
 {
 	Nod* arbore = citireFisier("Elevi.txt");
-	afisareInOrder(arbore);//sorteaza crescator dupa id (sortare binara)
+	afisareInOrder(arbore);
 
 	printf("Media este: %5.2f", calculeazaMedieGenerala(arbore));
 }
+
+*/
+

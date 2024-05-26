@@ -27,10 +27,10 @@
     <ClCompile Include="Seminar10.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Seminar11.cpp">
+    <ClCompile Include="Seminar13.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Seminar13.c">
+    <ClCompile Include="Semainar11.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #include <malloc.h>
 #include <string.h>
@@ -134,3 +135,6 @@ void main()
 	inserareMuchie(graf, 1, 4);
 	inserareMuchie(graf, 2, 3);
 }
+
+*/
+
