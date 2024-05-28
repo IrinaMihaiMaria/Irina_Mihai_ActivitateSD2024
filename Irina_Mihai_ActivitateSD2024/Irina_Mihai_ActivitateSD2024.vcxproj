@@ -130,6 +130,7 @@
     <ClCompile Include="Semainar11.c" />
     <ClCompile Include="Seminar10.c" />
     <ClCompile Include="Seminar13.c" />
+    <ClCompile Include="Seminar14.c" />
     <ClCompile Include="Seminar6.c" />
     <ClCompile Include="Seminar7.c" />
     <ClCompile Include="Seminar8.c" />

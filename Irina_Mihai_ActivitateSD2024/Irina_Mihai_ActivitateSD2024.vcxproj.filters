@@ -33,6 +33,9 @@
     <ClCompile Include="Semainar11.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Seminar14.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Elevi.txt" />
